@@ -1,0 +1,16 @@
+
+
+		***************  aws-elastic-beanstalk port : 8080 *******************
+
+
+SpringBoot
+
+
+    //***********  AWS REST API Call *********************//
+
+    Public Facing Port - 8080 :
+            http://localhost:8080/rest-api-aws-elastic-beanstalk/getAWSElasticBeanstalkDeployments
+
+
+    //***********  AWS REST API Call *********************//
+
