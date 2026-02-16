@@ -1,17 +1,15 @@
-# This file controls the AWS CodeBuild
-
 version: 0.2
 phases:
-  pre_build:
-    commands:
-      - echo "Entered the pre-build phase"
   build:
     commands:
-      - echo "Entered build phase"
+      - echo "Starting building stage"
+      - echo "Command to package the application into a JAR"
       - mvn clean package
   post_build:
     commands:
-      - echo "Entered the post-build phase"
+      - echo "Building complete"
 artifacts:
   files:
+    # Specify the JAR files to be deployed
     - target/aws-elastic-beanstalk.jar
+  discard-paths: yes
